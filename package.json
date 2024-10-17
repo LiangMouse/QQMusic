@@ -11,19 +11,26 @@
     "@types/node": "^16.18.113",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
+    "craco-less": "^2.1.0-alpha.0",
+    "eslint-config": "^0.3.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "normalize.css": "^8.0.1",
+    "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "start": "craco start",
-  "build": "craco build",
-  "test": "craco test",
-  "eject": "react-script eject"
-},
-
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-script eject",
+    "prettier": "prettier --write .",
+    "--comment": "上边是npm run prettier后执行全部的格式化,可以创建.prettierigonre来忽略一些不需要格式化的文件"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -41,5 +48,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.1",
+    "globals": "^15.11.0",
+    "typescript-eslint": "^8.9.0"
   }
 }

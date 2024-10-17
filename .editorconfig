@@ -1,0 +1,15 @@
+# 设置适用于所有文件的规则
+root = true
+
+[*]
+charset = utf-8            # 设置字符编码为 UTF-8
+indent_style = space        # 缩进使用空格
+indent_size = 2             # 缩进大小为2个空格
+end_of_line = lf            # 使用 Unix 风格的换行符 (LF)
+insert_final_newline = true # 文件末尾自动插入换行符
+trim_trailing_whitespace = true # 删除每行末尾多余的空格
+
+# 设置针对特定文件类型的规则
+[*.md]
+indent_size = 4             # 对于 Markdown 文件，缩进大小为 4 个空格
+trim_trailing_whitespace = false # 不删除 Markdown 文件中的行尾空格
