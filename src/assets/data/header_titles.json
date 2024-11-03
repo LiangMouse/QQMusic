@@ -1,0 +1,27 @@
+[
+  {
+    "title": "音乐馆",
+    "type": "path",
+    "link": "/discover"
+  },
+  {
+    "title": "我的音乐",
+    "type": "path",
+    "link": "/mine"
+  },
+  {
+    "title": "客户端",
+    "type": "link",
+    "link": "https://y.qq.com/download/index.html"
+  },
+  {
+    "title": "开放平台",
+    "type": "link",
+    "link": "https://y.qq.com/artists"
+  },
+  {
+    "title": "VIP",
+    "type": "link",
+    "link": "https://y.qq.com/portal/vipportal/index.html"
+  }
+]

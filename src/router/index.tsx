@@ -10,9 +10,11 @@ const Download = lazy(() => import('@/views/download'));
 import Recommend from '@/views/discover/c-pages/recommend';
 import Ranking from '@/views/discover/c-pages/ranking';
 import Album from '@/views/discover/c-pages/album';
-import Djradio from '@/views/discover/c-pages/djradio';
 import Artist from '@/views/discover/c-pages/artist';
 import Songs from '@/views/discover/c-pages/songs';
+import Radio from '@/views/discover/c-pages/radio';
+import Mvlist from '@/views/discover/c-pages/mvlist';
+import Albummall from '@/views/discover/c-pages/albummall';
 
 const routes: RouteObject[] = [
   {
@@ -20,31 +22,39 @@ const routes: RouteObject[] = [
     element: <Discover />,
     children: [
       {
-        path: 'discover',
-        element: <Navigate to="discover/recommend" />
+        path: '',
+        element: <Navigate to="recommend" />
       },
       {
-        path: 'discover/recommend',
+        path: 'recommend',
         element: <Recommend />
       },
       {
-        path: 'discover/ranking',
+        path: 'ranking',
         element: <Ranking />
       },
       {
-        path: 'discover/songs',
+        path: 'songs',
         element: <Songs />
       },
       {
-        path: 'discover/djradio',
-        element: <Djradio />
+        path: 'radio',
+        element: <Radio />
       },
       {
-        path: 'discover/artist',
+        path: 'mvlist',
+        element: <Mvlist />
+      },
+      {
+        path: 'albummall',
+        element: <Albummall />
+      },
+      {
+        path: 'artist',
         element: <Artist />
       },
       {
-        path: 'discover/album',
+        path: 'album',
         element: <Album />
       }
     ]

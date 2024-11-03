@@ -1,19 +1,16 @@
 import React, { Suspense } from 'react';
-import { useRoutes, Link } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
 import routes from './router';
+import AppHeader from './components/app-header';
+import AppFooter from './components/app-footer';
 function App() {
   return (
     <div className="App">
-      <div className="nav">
-        <Link to="/discover">发现音乐</Link>
-        <Link to="/mine">我的音乐</Link>
-        <Link to="/subscribe">关注</Link>
-        <Link to="/download">下载客户端</Link>
-      </div>
-
+      <AppHeader></AppHeader>
       <Suspense fallback="">
-        <div className="main">{useRoutes(routes)}</div>
+        <div className="">{useRoutes(routes)}</div>
       </Suspense>
+      <AppFooter></AppFooter>
     </div>
   );
 }

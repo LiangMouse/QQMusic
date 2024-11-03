@@ -20,6 +20,8 @@ module.exports = {
     'no-unused-vars': 'warn', // 未使用变量的警告
     'no-undef': 'warn', // 未定义变量的警告
     '@typescript-eslint/no-unused-vars': 'warn', // TypeScript 未使用变量的警告
-    'react/prop-types': 'off' // 如果你使用 TypeScript，可以关闭 PropTypes 检查
+    'react/prop-types': 'off', // 如果你使用 TypeScript，可以关闭 PropTypes 检查
+    '@typescript-eslint/no-var-requires': 'off', // 可以使用require语法
+    '@typescript-eslint/no-explicit-any': 'off'
   }
 };
