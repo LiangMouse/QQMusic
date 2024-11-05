@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-export const NavWrapper = styled.div`
-  .mod_top_subnav {
-    height: 51px;
-    line-height: 51px;
-    border-top: 1px solid #f2f2f2;
-    padding-left: 230px;
-    margin-right: -50px;
-  }
+export const NavWrapper = styled.ul`
+  height: 51px;
+  line-height: 51px;
+  border-top: 1px solid #f2f2f2;
+  padding-left: 230px;
+  margin-right: -50px;
   .active {
     color: #31c27c;
   }

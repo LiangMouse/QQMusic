@@ -3,7 +3,7 @@ import type { ReactNode, FC } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchBannerDataAction } from './store/recomend';
 import { AppDispatch } from '@/store';
-import SongListBanner from './c-cpns/songListBanner';
+import SongListRecommend from './c-cpns/songListRecommend';
 
 interface IProps {
   children?: ReactNode;
@@ -16,7 +16,7 @@ const Recommond: FC<IProps> = () => {
   }, []);
   return (
     <div>
-      <SongListBanner />
+      <SongListRecommend />
     </div>
   );
 };

@@ -21,13 +21,15 @@ const Discover: FC<IProps> = () => {
       });
   }, []);
   return (
-    <div>
-      <NavBar />
+    <>
+      <div className="wrapper-v1">
+        <NavBar />
+      </div>
       <Suspense fallback="">
         <Outlet />
         {/* 二级路由内容的占位符 */}
       </Suspense>
-    </div>
+    </>
   );
 };
 

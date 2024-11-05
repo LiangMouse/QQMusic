@@ -38,7 +38,7 @@ const AppHeader: FC<IProps> = () => {
                 />
               </a>
             </h1>
-            <ul className="mod_top_nav">
+            <ul className="mod_top_nav wrapper-v1">
               {headerTitles.map((item) => {
                 return (
                   <li className="top_nav__item" key={item.title}>
